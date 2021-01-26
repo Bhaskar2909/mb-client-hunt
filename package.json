@@ -1,0 +1,20 @@
+  
+{
+    "name": "mb-client-hunt",
+    "version": "1.0.0",
+    "description": "client side app",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Chandupolisetty/cp-client-hunt.git"
+    },
+    "author": "Bhaskar Reddy Minupuri",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Chandupolisetty/cp-client-hunt/issues"
+    },
+    "homepage": "https://github.com/Chandupolisetty/cp-client-hunt#readme"
+  }
