@@ -1,6 +1,7 @@
 
 article {
     text-align: center;
+        font-weight: bold;
     background-color: green;
     color: black;
     }
