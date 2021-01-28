@@ -1,4 +1,4 @@
-import locationsArray from '../init-location.js';
+import locationsArray from '../init-locations.js';
 
 // helper functions....................
 
@@ -8,7 +8,7 @@ import locationsArray from '../init-location.js';
 
 let locationElement = document.getElementById("location");
 
-window.addEventListener('load', main              );
+window.addEventListener('load', main);
 locationElement.addEventListener('click', locationHandler);
 locationElement.addEventListener('touch', locationHandler);
 
@@ -35,9 +35,9 @@ async function getLocation() {
 async function locationHandler() {
     let locText = await getLocation();
     currentlat = locText.coords.latitude;
-    document.getElementById("device-lat").innerHTML = "Your device-latitude: " + currentlat.toFixed(6);
+    document.getElementById("device-lat").innerHTML = "device-latitude: " + currentlat.toFixed(6);
     currentlon = locText.coords.longitude;
-    document.getElementById("device-long").innerHTML = "Your device longitude: " + currentlon.toFixed(6);
+    document.getElementById("device-long").innerHTML = "device-longitude: " + currentlon.toFixed(6);
 
     locationsArray.forEach(function (value) {
         if (isInside(value.Latitude, value.Longitude)) {
@@ -56,13 +56,13 @@ async function locationHandler() {
 }
 
 
-//checking if distance is in 30m range.
+//checking if distance is in 10m range.
 
 
 function isInside(questLat, questLon) {
     let distance = distanceBetweenLocations(questLat, questLon);
     console.log("distance: " + distance);
-    if (distance < 15) {
+    if (distance < 20) {
         return true;
     } else {
         return false;
