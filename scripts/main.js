@@ -19,7 +19,7 @@ let currentlat;
 let currentlon;
 let error = true;
 
-// getLocation() function is used to collect the current location
+
 async function getLocation() {
     return new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject);
@@ -28,8 +28,7 @@ async function getLocation() {
     });
 }
 
-//the locationHandler() function checksout the current location and compares it with the 
-//init-locations.
+
 
 async function locationHandler() {
     let locText = await getLocation();
@@ -45,7 +44,7 @@ async function locationHandler() {
         }
     });
 
-    // In case of any error where if the device is not 30m range it displays error.
+    
 
     if(error) {
         document.getElementById("error-message").innerHTML = "You're not in the radius range.";
@@ -55,7 +54,7 @@ async function locationHandler() {
 }
 
 
-//checking if distance is in 10m range.
+
 
 
 function isInside(questLat, questLon) {
@@ -68,7 +67,7 @@ function isInside(questLat, questLon) {
     }
 }
 
-//distance between the lat-long points.
+
 function distanceBetweenLocations(questLat, questLon) {
     const R = 6371e3;
     const φ1 = currentlat * Math.PI / 180;
