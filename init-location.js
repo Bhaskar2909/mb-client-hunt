@@ -1,12 +1,12 @@
 export default [
     {
       Name: 'Horizons',
-      North: 40.3589695,
-      West: -94.8831951,
-      South: 40.3589695,
-      East: -94.8831951,
-      Notes: 'circle',
-      Attachments: '',
+      Latitude: 40.3589695,
+      Longitude: -94.8831951,
+    //   South: 40.3589695,
+    //   East: -94.8831951,
+    //   Notes: 'circle',
+    //   Attachments: '',
     //   'Quest-Location': 'N college dr One',
     },
     {
@@ -15,8 +15,8 @@ export default [
       West: -94.89084,
       South: 40.343268,
       East: -94.8884,
-      Notes: 'heading south',
-      Attachments: '',
-      'Quest-Location': 'Faustiana-Faustiana',
+    //   Notes: 'heading south',
+    //   Attachments: '',
+    //   'Quest-Location': 'Faustiana-Faustiana',
     },
 ];
