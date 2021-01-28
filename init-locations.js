@@ -12,12 +12,12 @@ export default [
 },
      {
   Name: 'Hughes Field House',
-//   Latitude:40.352186,
-//   Longitude:-94.88907,
-//   North: 40.352186, 
-//   West: -94.88907,
-//   South: 40.352186, 
-//   East: -94.88907,
+  Latitude:40.352186,
+  Longitude:-94.88907,
+  North: 40.352186, 
+  West: -94.88907,
+  South: 40.352186, 
+  East: -94.88907,
 }
 
 ];
