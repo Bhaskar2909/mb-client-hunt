@@ -56,13 +56,13 @@ async function locationHandler() {
 }
 
 
-//checking if distance is in 10m range.
+//checking if distance is in 5m range.
 
 
 function isInside(questLat, questLon) {
     let distance = distanceBetweenLocations(questLat, questLon);
     console.log("distance: " + distance);
-    if (distance > 20) {
+    if (distance < 5) {
         return true;
     } else {
         return false;
