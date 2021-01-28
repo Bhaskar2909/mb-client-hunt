@@ -10,7 +10,7 @@ import locationsArray from '../init-locations.js';
 
 let locationElement = document.getElementById("location");
 
-window.addEventListener('load', main);
+window.addEventListener('load', main              );
 locationElement.addEventListener('click', locationHandler);
 locationElement.addEventListener('touch', locationHandler);
 
