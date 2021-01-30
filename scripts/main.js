@@ -54,6 +54,8 @@ async function locationHandler() {
         speechSynthesis.speak(Statement);
     } else {
         document.getElementById("error-message").innerHTML = "";
+        let Statement = new SpeechSynthesisUtterance("Sorry, you are out of range");
+        speechSynthesis.speak(Statement);
     }
 }
 
