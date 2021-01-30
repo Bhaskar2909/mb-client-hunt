@@ -41,9 +41,9 @@ export default function getLocation() {
           if (inside(device, thisLoc)) {
             const name = thisLoc.Name;
             document.querySelector('#locationAnswer').innerHTML = name;
-            const utterance = new SpeechSynthesisUtterance();
-            utterance.text = `Congratulations! You found location ${name}`;
-            window.speechSynthesis.speak(utterance);
+            const Statement = new SpeechSynthesisUtterance();
+            Statement.text = `Congratulations! You found location ${name}`;
+            window.speechSynthesis.speak(Statement);
             break;
           }
         }
